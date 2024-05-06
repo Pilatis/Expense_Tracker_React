@@ -1,0 +1,16 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 450px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgb(36, 36, 36);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.container-content {
+    margin: 30px auto;
+
+}

@@ -1,0 +1,23 @@
+.container-balance {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.title-balance {
+    text-align: left;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+}
+
+#number-balance {
+    text-align: left;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+}
