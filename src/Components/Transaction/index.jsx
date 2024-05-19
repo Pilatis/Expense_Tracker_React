@@ -1,14 +1,15 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types'
 import { GlobalContext } from '../../Context/GlobalProvider';
 import '../TransactionList/style.css';
 
-const index = ({ transaction, key }) => {
+const Transaction = ({ transaction}) => {
   const { deleteTransaction } = useContext(GlobalContext);
 
   const transactionSign = transaction.amount > 0 ? '+' : '-';
 
   return (
-    <li key={key} className={transaction.amount > 0 ? 'minus' : 'plus'}>
+    <li className={transaction.amount > 0 ? 'minus' : 'plus'}>
       {transaction.text}
       <span>{transactionSign}${Math.abs(transaction.amount)}</span>
       <button onClick={() => deleteTransaction(transaction.id)} className="delete-btn">X</button>
@@ -16,4 +17,13 @@ const index = ({ transaction, key }) => {
   )
 }
 
-export default index
+// definitions
+Transaction.propTypes = {
+  transaction: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired
+  }).isRequired
+}
+
+export default Transaction;

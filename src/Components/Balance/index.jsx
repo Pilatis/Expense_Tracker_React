@@ -6,7 +6,7 @@ import './style.css';
 const Balance = () => {
   const { transactions } = useContext(GlobalContext);
 
-  const transactionAmounts = transactions.map((transaction) => transaction.amount);
+  const transactionAmounts = transactions.map(transaction => transaction.amount);
   const transactionTotal = transactionAmounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
   return (
