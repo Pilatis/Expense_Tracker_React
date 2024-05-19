@@ -36,7 +36,8 @@ li {
   text-decoration: none;
 }
 
-.minus {
+.minus,
+.plus {
   font-size: 16px;
   font-weight: 600;
 }

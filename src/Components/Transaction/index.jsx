@@ -6,7 +6,7 @@ const index = ({ transaction, key }) => {
 
 
   return (
-    <li key={key} className="minus">
+    <li key={key} className={transaction.amount > 0 ? 'minus' : 'plus'}>
       {transaction.text}
       <span>{transactionSign}${Math.abs(transaction.amount)}</span>
       <button className="delete-btn">X</button>
