@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header-container">
       <h2 className="header-title">
-        Expense Tracker
+        Rastreador de Despesas
       </h2>
     </div>
   );

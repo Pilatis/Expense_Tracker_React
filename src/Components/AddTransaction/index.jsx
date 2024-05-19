@@ -10,17 +10,17 @@ const AddTransaction = () => {
       <h3 className="title-add-transaction">Adicionar nova transação</h3>
       <form id="form">
         <div className="form-control">
-          <label htmlFor="text">Text</label>
-          <input value={text} onChange={(e) => setText(e.target.value)} type="text" id="text" placeholder="Enter text..." />
+          <label htmlFor="text">Texto</label>
+          <input value={text} onChange={(e) => setText(e.target.value)} type="text" id="text" placeholder="Insira o texto..." />
         </div>
         <div className="form-control">
           <label htmlFor="amount">
             Quantidade <br />
             (negativo - despesa, positivo - renda)
           </label>
-          <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" id="amount" placeholder="Enter amount..." />
+          <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" id="amount" placeholder="Insira o valor..." />
         </div>
-        <button className="btn">Adicionar transação</button>
+        <button className="btn-transaction">Adicionar transação</button>
       </form>
     </div>
   );
